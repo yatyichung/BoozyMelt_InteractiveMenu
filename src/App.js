@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Menu from './components/Menu';
+import items from './components/Items';
+import Categories from './components/Categories';
+
 
 function App() {
+  const [menuItems, setMenuItems] = useState(items);
+  const [categories, setCategories] = useState([]);
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <h1 className='text-center mt-5 mb-3'>BoozyMelt Menu</h1>
+        <div className='gradient-line text-center m-auto'></div>
       </header>
-    </div>
+      <Categories />
+      <Menu items={menuItems}/>
+
+    </>
   );
 }
 

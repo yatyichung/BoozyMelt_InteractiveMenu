@@ -1,13 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Oleo+Script:wght@400;700&display=swap');
+
+/*font-family: 'Manrope', sans-serif;
+font-family: 'Oleo Script', cursive;*/
+
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Manrope', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+h1{
+  font-weight: bold;
 }
+
+.gradient-line{
+  border-bottom: 4px solid;
+  -o-border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
+  border-image: -webkit-gradient(linear, left top, right top, from(#FD8C73), to(#CF0BD3));
+  border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
+  border-image-slice: 1;
+  width: 150px;
+}
+
+.item-img{
+  width:100%;
+  border-radius: 20px;
+}
+
