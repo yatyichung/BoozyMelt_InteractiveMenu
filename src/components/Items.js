@@ -1,4 +1,4 @@
-const menu =[
+const items =[
     {
         id: 1,
         title: 'Boozy Scoop',
@@ -66,7 +66,8 @@ const menu =[
         id: 8,
         title: 'Peanut Butter Swirl',
         category: 'non-alcoholic',
-        price: null,
+        percentage: null,
+        price: 15,
         img: './images/peanutbutterswirl.jpg',
         desc: 'Vanilla and chocolate mix base icecream with peanut butter swirls.',
     },
@@ -145,4 +146,4 @@ const menu =[
     
 ] 
 
-export default menu;
+export default items;
