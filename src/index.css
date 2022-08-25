@@ -10,6 +10,16 @@ body {
   color: #3e3e3e;
 }
 
+a:link,a:visited{
+  color:white;
+  text-decoration: none;
+}
+
+
+a:hover{
+  color:grey !important;
+  text-decoration: none;
+}
 
 h1{
   font-weight: bold;
@@ -27,6 +37,7 @@ h1{
 .item-img{
   width:100%;
   border-radius: 20px;
+  box-shadow: 0px 3px 5px #b0b0b0;
 }
 
 .item-price {
@@ -38,23 +49,57 @@ h1{
   color: #666666;
 }
 
-.hover-box {
-  padding: 10px 0px;
+/* .hover-box {
   border-radius: 10px;
 }
 .hover-box:hover{
   box-shadow: 0px 5px 20px #3e3e3e;
+} */
+
+.custom-btn{
+  border: none;
+  background-color: transparent;
+  width:130px;
+  margin: 0 10px 10px 0;
+  border: 2px solid #532301;
+  border-radius: 10px;
+  font-family: 'Oleo Script';
+  box-shadow: 0px 3px 5px #b0b0b0;
+  color: #532301;
+  font-weight: bold;
+  transition:  0.5s;
+} 
+
+
+.custom-btn:hover {
+  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
+  color: white;
 }
 
-/*
-.fa-droplet {
-    background-color: grey;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#7019A6), to(#F29E38));
-    background-image: linear-gradient(#7019A6, #F29E38);
-    background-size: 100%;
-    background-repeat: repeat;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
+#footer {
+  background-color: #4b4b4b;
 }
-*/
+
+#footer p, #footer a{
+  font-size: 11px;
+}
+
+#footer .footer-headline{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+#footer .col-12 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+#footer-copyright{
+  font-size: 10px;
+  color: grey;
+}
+
+#footer .footer-socialmedia{
+  font-size: 20px;
+}
