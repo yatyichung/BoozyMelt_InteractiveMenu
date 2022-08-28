@@ -30,17 +30,15 @@ function App() {
   //======CART======
   const [cart,setCart] = useState([]);
 
-  const handleClick = (menuItem)=>{
+  const addToCart = (menuItem)=>{
       cart.push(menuItem);
       console.log(cart);
   }
 
-  
-
   return (
     <>
       <Header setView={setView} cartNum={cart.length}/>
-      { view? <><Categories itemsByCategory={itemsByCategory}/><Menu items={menuItems} handleClick={handleClick}/> </> : <Cart cart={cart} /> }
+      { view? <><Categories itemsByCategory={itemsByCategory}/><Menu items={menuItems} addToCart={addToCart}/> </> : <Cart cart={cart} setCart={setCart} /> }
       <Footer />
     </>
   );

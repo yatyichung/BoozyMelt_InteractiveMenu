@@ -2,7 +2,14 @@ import React, {useState, useEffect} from 'react';
 import { FaGlassMartini,  FaTrash} from 'react-icons/fa';
 
 
-export default function Cart( {cart} ) {
+export default function Cart( {cart , setCart} ) {
+
+  //=====REMOVE ITEM=====
+  const removeItem = (id) => {
+    const itemRemoved = cart.filter((menuItem) => menuItem.id !== id );
+    setCart(itemRemoved);
+    countTotal();
+  };
 
   //=====FINAL PRICE=====
   const [total, setTotal] = useState(0);
@@ -41,7 +48,7 @@ export default function Cart( {cart} ) {
                                 {percentage == null ? null : <p><span ><FaGlassMartini className='fa-gradient'/></span> {percentage}</p>}
                             </>  
                             <p className='cart-item-desc'>{desc}</p>
-                            <button><FaTrash/> Remove</button>
+                            <button onClick={() => removeItem(id)}><FaTrash/> Remove</button>
                           </div>
                         </div>
                       </div>   
