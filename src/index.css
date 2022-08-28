@@ -25,6 +25,12 @@ h1{
   font-weight: bold;
 }
 
+#home-logo:hover, #cart-section:hover{
+  cursor: pointer;
+}
+
+
+
 .gradient-line{
   border-bottom: 4px solid;
   -o-border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
@@ -102,4 +108,46 @@ h1{
 
 #footer .footer-socialmedia{
   font-size: 20px;
+}
+
+#cart {
+  font-size: 30px;
+  padding: 0 20px;
+  position: relative;
+
+}
+
+#cart-item-num{
+  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
+  color:white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  right:10px;
+  top:50px;;
+}
+
+
+
+.cart-item-img{
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px #b0b0b0;
+}
+
+.cart-item-desc{
+  font-size: 12px;
+}
+
+#cart-total{
+  border-top: 4px solid;
+  -o-border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
+  border-image: -webkit-gradient(linear, left top, right top, from(#FD8C73), to(#CF0BD3));
+  border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
+  border-image-slice: 1;
+}
+#emptycart-img{
+  width: 40vw;
 }
