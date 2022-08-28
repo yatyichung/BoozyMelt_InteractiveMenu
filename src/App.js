@@ -38,7 +38,14 @@ function App() {
   return (
     <>
       <Header setView={setView} cartNum={cart.length}/>
-      { view? <><Categories itemsByCategory={itemsByCategory}/><Menu items={menuItems} addToCart={addToCart}/> </> : <Cart cart={cart} setCart={setCart} /> }
+      { view ? 
+        <>
+          <Categories itemsByCategory={itemsByCategory}/>
+          <Menu items={menuItems} addToCart={addToCart}/>
+        </> 
+        : 
+        <Cart cart={cart} setCart={setCart} /> 
+      }
       <Footer />
     </>
   );

@@ -5,6 +5,7 @@ import { FaGlassMartini,  FaTrash} from 'react-icons/fa';
 export default function Cart( {cart , setCart} ) {
 
   //=====REMOVE ITEM=====
+  /* pass in the selected id, filter out and keep the one that is not selected then update the cart */
   const removeItem = (id) => {
     const itemRemoved = cart.filter((menuItem) => menuItem.id !== id );
     setCart(itemRemoved);
@@ -36,7 +37,6 @@ export default function Cart( {cart , setCart} ) {
                 const {id, title,percentage, price, img, desc} = menuItem;
 
                   return(
-                  
                       <div className='col-12 g-4' key={id} >
                         <div className='row'>
                           <div className='col-6 col-md-2'>
@@ -51,16 +51,13 @@ export default function Cart( {cart , setCart} ) {
                             <button onClick={() => removeItem(id)}><FaTrash/> Remove</button>
                           </div>
                         </div>
-                      </div>   
-                   
+                      </div>  
                   );
               })}
             </div>
             <div id='cart-total' className='m-2 m-md-5'>
-            {cart.length ===0 ? null : <><h2 > Your total is <span className='float-end item-price'>${total}</span></h2></>}
-              
+            {cart.length ===0 ? null : <><h2 > Your total is <span className='float-end item-price'>${total}</span></h2></>}    
             </div>
-            
         </div>
     </>
   )

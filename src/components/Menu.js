@@ -2,9 +2,6 @@ import React from 'react';
 import { FaGlassMartini } from 'react-icons/fa';
 
 export default function Menu({ items, addToCart }) {
-
-   
-
     return (
     <>
         <div className='container'>
@@ -29,7 +26,6 @@ export default function Menu({ items, addToCart }) {
                         </div>
                     );
                 })}
-
             </div>
         </div>
     </>
