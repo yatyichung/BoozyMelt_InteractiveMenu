@@ -7,6 +7,7 @@ const items =[
         price: 15,
         img: './images/boozyscoop.jpg',
         desc: 'Vanilla scoop filled with rum sause and deep fried in crushed cereal.',
+        amount: 1,
     },
     {
         id: 2,
@@ -16,6 +17,7 @@ const items =[
         price: 14,
         img: './images/coffeetoffee.jpg',
         desc: 'Coffee base flavor icecream with caramel toffee bites.',
+        amount: 1,
     },
     {
         id: 3,
@@ -25,6 +27,7 @@ const items =[
         price: 13,
         img: './images/cookiesandcream.jpg',
         desc: 'Sweet Cream Ice Cream with pieces of Chocolate Sandwich Cookies.',
+        amount: 1,
     },
     {
         id: 4,
@@ -34,6 +37,7 @@ const items =[
         price: 16,
         img: './images/ehhhhh.jpg',
         desc: 'Maple syrup and vanilla base icecream loaded with walnuts.',
+        amount: 1,
     },
     {
         id: 5,
@@ -43,6 +47,7 @@ const items =[
         price: 15,
         img: './images/fortheloveofchocolate.jpg',
         desc: 'Rum infused Oreoes and Belgin milk chocolate and hazelut ice cream, with a side of rum cake.',
+        amount: 1,
     },
     {
         id: 6,
@@ -52,6 +57,7 @@ const items =[
         price: 15,
         img: './images/mangoswirl.jpg',
         desc: 'Mango flavoured ice cream with frozen mango chunks.',
+        amount: 1,
     },
     {
         id: 7,
@@ -61,6 +67,7 @@ const items =[
         price: 16,
         img: './images/mintchocolatechip.jpg',
         desc: 'Mint flavoured ice cream with semi-sweet chocolate chips.',
+        amount: 1,
     },
     {
         id: 8,
@@ -70,6 +77,7 @@ const items =[
         price: 15,
         img: './images/peanutbutterswirl.jpg',
         desc: 'Vanilla and chocolate mix base icecream with peanut butter swirls.',
+        amount: 1,
     },
     {
         id: 9,
@@ -79,6 +87,7 @@ const items =[
         price: 16,
         img: './images/pistachio.jpg',
         desc: 'Pistachio flavoured ice cream with lightly roasted and salted pistachio nuts.',
+        amount: 1,
     },
     {
         id: 10,
@@ -88,6 +97,7 @@ const items =[
         price: 15,
         img: './images/refresherscoop.jpg',
         desc: 'Peach and strawberry flavoured icecream infused with vodka and topped with frozen blueberrie.',
+        amount: 1,
     },
     {
         id: 11,
@@ -97,6 +107,7 @@ const items =[
         price: 19,
         img: './images/seeingdouble.jpg',
         desc: 'Vanilla scoop filled with rum sause and deep fried in crushed cereal.',
+        amount: 1,
     },
     {
         id: 12,
@@ -106,6 +117,7 @@ const items =[
         price: 16,
         img: './images/sexonthebeach.jpg',
         desc: 'We are bringing sexy back with a triple scoop of our almond flavoured ice cream drizzeld in caramel sauce.',
+        amount: 1,
     },
     {
         id: 13,
@@ -115,6 +127,7 @@ const items =[
         price: 15,
         img: './images/smartiesfun.jpg',
         desc: 'Vanilla icecream loaded and topped with smarties.',
+        amount: 1,
     },
     {
         id: 14,
@@ -124,6 +137,7 @@ const items =[
         price: 15,
         img: './images/sweettooth.jpg',
         desc: 'Whiskey infused vanilla double scoop on top of our chocolate ganache.',
+        amount: 1,
     },
     {
         id: 15,
@@ -133,6 +147,7 @@ const items =[
         price: 15,
         img: './images/thunder.jpg',
         desc: 'Strawberry base icecream with frozen blackcurrent bites infused with strawberry vodka.',
+        amount: 1,
     },
     {
         id: 16,
@@ -142,7 +157,9 @@ const items =[
         price: 14,
         img: './images/wavybaby.jpg',
         desc: 'Cotton cady scoops enfused with vodka and topped off sprinkles.',
+        amount: 1,
     }
+    
     
 ] 
 

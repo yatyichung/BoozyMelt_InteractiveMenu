@@ -5,9 +5,12 @@ font-family: 'Oleo Script', cursive;*/
 
 
 body {
-  margin: 0;
+
   font-family: 'Manrope', sans-serif;
   color: #3e3e3e;
+  margin:0;
+  padding:0;
+  
 }
 
 a:link,a:visited{
@@ -84,6 +87,7 @@ h1{
 
 #footer {
   background-color: #4b4b4b;
+
 }
 
 #footer p, #footer a{
@@ -149,5 +153,71 @@ h1{
   border-image-slice: 1;
 }
 #emptycart-img{
-  width: 40vw;
+  width: 30vw;
+}
+
+.after-tax{
+  font-size: 12px;
+}
+
+.add-to-cart{
+  border: 2px solid white;
+  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
+  color:white;
+  border-radius: 20px;
+  font-weight: 300;
+  box-shadow: 0px 3px 10px #676667;
+  transition: opacity 0.3s;
+ 
+}
+
+.add-to-cart:hover{
+ opacity: 0.8;
+}
+
+.edit-btn{
+ border:none;
+ background-color: rgba(0, 0, 0, 0.045);
+ padding: 3px 12px;
+ border-radius: 20px;
+}
+.edit-btn:hover{
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.287);
+ }
+
+.edit-btn-container{
+  border:1px solid black;
+  border-radius: 20px;
+  display: inline-block;
+
+}
+
+
+.cart-container{
+  min-height: 550px;
+}
+
+@media only screen and (max-width: 912px) {
+  .cart-container{
+    min-height: 1100px;
+  }
+}
+
+@media only screen and (max-width: 911px) {
+  .cart-container{
+    min-height: 885px;
+  }
+}
+
+@media only screen and (max-width: 819px) {
+  .cart-container{
+    min-height: 730px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .cart-container{
+    min-height: 0px;
+  }
 }
