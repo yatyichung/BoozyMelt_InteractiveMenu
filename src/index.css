@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&family=Oleo+Script:wght@400;700&display=swap');
 
-/*font-family: 'Manrope', sans-serif;
-font-family: 'Oleo Script', cursive;*/
-
-
 body {
 
   font-family: 'Manrope', sans-serif;
@@ -24,6 +20,7 @@ a:hover{
   text-decoration: none;
 }
 
+/*=====HEADER=====*/
 h1{
   font-weight: bold;
 }
@@ -31,8 +28,6 @@ h1{
 #home-logo:hover, #cart-section:hover{
   cursor: pointer;
 }
-
-
 
 .gradient-line{
   border-bottom: 4px solid;
@@ -43,47 +38,25 @@ h1{
   width: 150px;
 }
 
-.item-img{
-  width:100%;
-  border-radius: 20px;
-  box-shadow: 0px 3px 5px #b0b0b0;
+#cart {
+  font-size: 30px;
+  padding: 0 20px;
+  position: relative;
+
 }
 
-.item-price {
-  color: #532301;
-  font-family: 'Oleo Script';
-}
-
-.item-desc{
-  color: #666666;
-}
-
-/* .hover-box {
-  border-radius: 10px;
-}
-.hover-box:hover{
-  box-shadow: 0px 5px 20px #3e3e3e;
-} */
-
-.custom-btn{
-  border: none;
-  background-color: transparent;
-  width:130px;
-  margin: 0 10px 10px 0;
-  border: 2px solid #532301;
-  border-radius: 10px;
-  font-family: 'Oleo Script';
-  box-shadow: 0px 3px 5px #b0b0b0;
-  color: #532301;
-  font-weight: bold;
-  transition:  0.5s;
-} 
-
-
-.custom-btn:hover {
+#cart-item-num{
   background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
-  color: white;
+  color:white;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  position: absolute;
+  right:10px;
+  top:50px;;
 }
+/*=====FOOTER=====*/
 
 #footer {
   background-color: #4b4b4b;
@@ -114,26 +87,43 @@ h1{
   font-size: 20px;
 }
 
-#cart {
-  font-size: 30px;
-  padding: 0 20px;
-  position: relative;
 
+/*=====MENU=====*/
+
+.item-img{
+  width:100%;
+  border-radius: 20px;
+  box-shadow: 0px 3px 5px #b0b0b0;
 }
 
-#cart-item-num{
-  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
-  color:white;
+.item-price {
+  color: #532301;
+  font-family: 'Oleo Script';
+}
+
+.item-desc{
+  color: #666666;
+}
+
+.custom-btn{
+  border: none;
+  background-color: transparent;
+  width:130px;
+  margin: 0 10px 10px 0;
+  border: 2px solid #532301;
+  border-radius: 10px;
+  font-family: 'Oleo Script';
+  box-shadow: 0px 3px 5px #b0b0b0;
+  color: #532301;
   font-weight: bold;
-  padding: 3px 8px;
-  border-radius: 50%;
-  font-size: 12px;
-  position: absolute;
-  right:10px;
-  top:50px;;
+  transition:  0.5s;
+} 
+
+
+.custom-btn:hover {
+  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
+  color: white;
 }
-
-
 
 .cart-item-img{
   width: 100%;
@@ -152,8 +142,21 @@ h1{
   border-image: linear-gradient(to right, #FD8C73, #CF0BD3);
   border-image-slice: 1;
 }
+
+/*=====CART=====*/
 #emptycart-img{
   width: 30vw;
+}
+
+.view-menu-btn {
+  font-family: 'Oleo Script';
+  color:white;
+  background-image: linear-gradient(to right, #FD8C73, #CF0BD3 );
+  border: 2px solid white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px grey;
+
 }
 
 .after-tax{
@@ -167,19 +170,21 @@ h1{
   border-radius: 20px;
   font-weight: 300;
   box-shadow: 0px 3px 10px #676667;
+  opacity: 0.65;
   transition: opacity 0.3s;
  
 }
 
 .add-to-cart:hover{
- opacity: 0.8;
+ opacity: 1;
 }
 
 .edit-btn{
  border:none;
- background-color: rgba(0, 0, 0, 0.045);
+ background-color: rgba(0, 0, 0, 0.114);
  padding: 3px 12px;
  border-radius: 20px;
+ transition: background-color 0.3s;
 }
 .edit-btn:hover{
   cursor: pointer;
@@ -187,12 +192,10 @@ h1{
  }
 
 .edit-btn-container{
-  border:1px solid black;
   border-radius: 20px;
   display: inline-block;
 
 }
-
 
 .cart-container{
   min-height: 550px;

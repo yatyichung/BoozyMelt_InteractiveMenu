@@ -1,11 +1,11 @@
 import React, {useState, useEffect} from 'react';
-import { FaGlassMartini,  FaTrash} from 'react-icons/fa';
+import { FaGlassMartini,  FaTrash, FaIceCream} from 'react-icons/fa';
 
 
-export default function Cart( {cart , setCart, editCart} ) {
+export default function Cart( {cart , setCart, editCart, setView} ) {
 
   //=====REMOVE ITEM=====
-  /* pass in the selected id, filter out and keep the one that is not selected then update the cart */
+  /* pass in the selected id, filter out and keep the one that is not selected, then update the cart */
   const removeItem = (id) => {
     const itemRemoved = cart.filter((menuItem) => menuItem.id !== id );
     setCart(itemRemoved);
@@ -30,7 +30,15 @@ export default function Cart( {cart , setCart, editCart} ) {
     <>
         <div className='container cart-container'>
             <div className='text-center mt-3'>
-              {cart.length === 0 ? <><img src='./images/emptycart.png' alt='empty cart vector' id="emptycart-img" /><h2>Your cart is empty.</h2><p>You seem very hungry! Let's go get some icecream!</p></> : null}
+              {cart.length === 0 ? 
+                <>
+                  <img src='./images/emptycart.png' alt='empty cart vector' id="emptycart-img" />
+                  <h2>Your cart is empty.</h2>
+                  <p>You seem very hungry! Let's go get some icecream!</p>
+                  <button onClick={() => setView(true)} className='view-menu-btn'><FaIceCream/> View Menu   </button>
+                </> 
+                : null
+              }
             </div>
             <div className='row my-3'>
               {cart.map((menuItem)=>{
@@ -60,9 +68,17 @@ export default function Cart( {cart , setCart, editCart} ) {
                       </div>  
                   );
               })}
+
             </div>
             <div id='cart-total' className='m-2 m-md-5'>
-            {cart.length ===0 ? null : <><h2 className='py-3' > Your total is <span className='float-end item-price'>${Math.round(total*100)/100}<span className='after-tax'> &#40;after tax&#41;</span></span></h2></>}    
+            {cart.length ===0 ? 
+              null : 
+              <>
+                <h2 className='py-3' > Your total is 
+                  <span className='float-end item-price'>${Math.round(total*100)/100}<span className='after-tax'> &#40;include tax&#41;</span></span>
+                </h2>
+              </>
+            }    
             </div>
         </div>
     </>

@@ -4,9 +4,6 @@ import { FaCartPlus } from 'react-icons/fa';
 
 export default function Header( { setView , cartNum } ) {
 
-
-
-
   return (
     <>
       <div className='mt-5 mb-2 text-center px-2'>
