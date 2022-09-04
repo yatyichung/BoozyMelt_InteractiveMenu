@@ -1,8 +1,9 @@
+# About
+
 Demo: https://boozymelt-interactive-menu.herokuapp.com/
 
-# Getting Started with Create React App
+<img width="500" alt="projects-menu" src="https://user-images.githubusercontent.com/78622789/188338319-782f7952-6c75-40be-a329-75402f7583ce.png" />
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Run the project
 
