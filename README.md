@@ -12,7 +12,7 @@
     </tr>
 </table>
 
-## Run the project 🏃‍♀️
+## Run the project 
 
 1) Clone project to your VScode or other code editor
 2) To install node_modeul run below code in command line
