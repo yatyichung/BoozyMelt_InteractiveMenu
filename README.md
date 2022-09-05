@@ -1,4 +1,4 @@
-# About ✨
+# <img src="https://user-images.githubusercontent.com/78622789/188339140-da13fce9-b7af-45da-ab7a-d04bf5d3ff41.jpg" width="50"> About
 
 
 <table>
