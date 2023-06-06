@@ -5,7 +5,6 @@
     <tr>
         <td><img  alt="projects-menu" src="https://user-images.githubusercontent.com/78622789/188338319-782f7952-6c75-40be-a329-75402f7583ce.png" /></td>
         <td>
-            Live demo: https://boozymelt-interactive-menu.herokuapp.com/ <br><br>
             This web application is built using <strong>React</strong> and styled with <strong>Bootstrap</strong>. 
             This is a rebuilt menu for <a href="https://sunnychungyatyi.com/assignments/Boozy%20Melt/index.html">BoozyMelt</a>. With the use of React (components, props, events handling, and hooks), this interactive menu enhances user interface, allows user to view the menu based on different categories also to create/read/update/delete items in the shopping cart.
         </td>
