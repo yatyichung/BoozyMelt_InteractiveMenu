@@ -4,7 +4,7 @@
 ![ezgif com-video-to-gif](https://github.com/yatyichung/BoozyMelt_InteractiveMenu/assets/78622789/681a21bd-0eeb-4dd0-9bf6-51882afa4f0a)
 
  This web application is built using <strong>React</strong> and styled with <strong>Bootstrap</strong>. 
-            This is a rebuilt menu for <a href="https://sunnychungyatyi.com/assignments/Boozy%20Melt/index.html">BoozyMelt</a>. With the use of React (components, props, events handling, and hooks), this interactive menu enhances user interface, allows user to view the menu based on different categories also to create/read/update/delete items in the shopping cart.
+            With the use of React (components, props, events handling, and hooks), this interactive menu enhances user interface, allows user to view the menu based on different categories also to create/read/update/delete items in the shopping cart.
 
 
 ## Run the project 
